@@ -36,22 +36,8 @@ class CryptoBot:
         self.strategy.trader = self.trader
         self.trader.strategy = self.strategy
 
-        self._running = None
-
-    def run(self, each_iter: float) -> None:
+    def run(self) -> None:
         """
-        Run the bot in a loop.
-
-        Args:
-            each_iter (float): The time interval between each iteration in seconds.
+        Run the bot once.
         """
-        self._running = True
-        while self._running:
-            self.trader.execute_signal(self.strategy.get_signal())
-            time.sleep(each_iter)
-
-    def stop(self) -> None:
-        """
-        Stop the bot.
-        """
-        self._running = False
+        self.trader.execute_signal(self.strategy.get_signal())
