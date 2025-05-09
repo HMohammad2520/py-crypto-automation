@@ -26,7 +26,7 @@ class CryptoBot:
         self.strategy = strategy
         self.trader = trader
         self._context_dict = context
-        
+
         # Initiating context
         self.context = object()
         [setattr(self.context, k, v) for k, v in context.items()]
@@ -36,7 +36,7 @@ class CryptoBot:
         # Connect strategy and trader
         self.strategy.trader = self.trader
         self.trader.strategy = self.strategy
-    
+
         self._running = None
 
     def run(self, each_iter: float) -> None:
@@ -50,7 +50,7 @@ class CryptoBot:
         while self._running:
             self.trader.execute_signal(self.strategy.get_signal())
             time.sleep(each_iter)
-    
+
     def stop(self) -> None:
         """
         Stop the bot.

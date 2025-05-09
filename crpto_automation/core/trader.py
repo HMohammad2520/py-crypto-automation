@@ -20,15 +20,15 @@ class Trader:
     @abstractmethod
     def buy(self) -> None:
         ...
-    
+
     @abstractmethod
     def sell(self) -> None:
         ...
-    
+
     @abstractmethod
     def hold(self) -> None:
         ...
-    
+
     @abstractmethod
     def error(self) -> None:
         ...
