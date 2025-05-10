@@ -1,3 +1,4 @@
+# crypto_automation\core\strategy.py
 from abc import abstractmethod
 from typing import Literal
 

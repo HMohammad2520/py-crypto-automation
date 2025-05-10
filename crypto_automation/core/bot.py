@@ -1,3 +1,4 @@
+# crypto_automation\core\bot.py
 import time
 from typing import Any
 

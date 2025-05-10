@@ -1,3 +1,4 @@
+# crypto_automation\core\trader.py
 from abc import abstractmethod
 from crpto_automation.type_hints import SignalTypes
 
