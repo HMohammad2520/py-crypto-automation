@@ -3,6 +3,7 @@ from typing import Any
 
 from .strategy import Strategy
 from .trader import Trader
+from crypto_automation._utils import logger
 
 class CryptoBot:
     """
