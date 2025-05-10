@@ -10,6 +10,3 @@ __all__ = [
     "Trader",
     "version",
 ]
-
-from ._utils import logger
-logger.debug('Imported py-crypto-automation')
