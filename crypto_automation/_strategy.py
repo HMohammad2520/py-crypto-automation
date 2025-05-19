@@ -4,8 +4,8 @@ from typing import Literal
 
 class Strategy:
     """Base class for all strategies"""
-    from .bot import CryptoBot
-    from .trader import Trader
+    from ._bot import CryptoBot
+    from ._trader import Trader
     _bot: CryptoBot
     context: object
     trader: Trader

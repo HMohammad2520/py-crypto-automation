@@ -1,8 +1,8 @@
 # crypto_automation\core\bot.py
 from typing import Any
 
-from .strategy import Strategy
-from .trader import Trader
+from ._strategy import Strategy
+from ._trader import Trader
 
 class CryptoBot:
     """

@@ -1,11 +1,11 @@
 # crypto_automation\core\trader.py
 from abc import abstractmethod
-from crpto_automation.type_hints import SignalTypes
+from ._type_hints import SignalTypes
 
 class Trader:
     """Base class for all traders"""
-    from .bot import CryptoBot
-    from .strategy import Strategy
+    from ._bot import CryptoBot
+    from ._strategy import Strategy
     _bot: CryptoBot
     context: object
     strategy: Strategy
