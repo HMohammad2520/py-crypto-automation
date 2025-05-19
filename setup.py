@@ -9,9 +9,7 @@ setup(
     author='Hmohammad2520',
     author_email='Hmohammad2520@gmail.com',
     url='https://github.com/Hmohammad2520/py-crypto-automation',
-    install_requires=[
-        'requests==2.32.3',
-    ],
+    install_requires=[],
     packages=find_packages(),
     include_package_data=True,
     zip_safe=False,
