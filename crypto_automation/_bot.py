@@ -3,6 +3,7 @@ from typing import Any
 
 from ._strategy import Strategy
 from ._trader import Trader
+from ._context import Context
 
 class CryptoBot:
     """
@@ -27,7 +28,7 @@ class CryptoBot:
         self._context_dict = context
 
         # Initiating context
-        self.context = object()
+        self.context = Context()
         [setattr(self.context, k, v) for k, v in context.items()]
         self.strategy.context = self.context
         self.trader.context = self.context

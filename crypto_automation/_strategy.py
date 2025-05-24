@@ -2,12 +2,14 @@
 from abc import abstractmethod
 from typing import Literal
 
+from ._context import Context
+
 class Strategy:
     """Base class for all strategies"""
     from ._bot import CryptoBot
     from ._trader import Trader
     _bot: CryptoBot
-    context: object
+    context: Context
     trader: Trader
 
     @abstractmethod

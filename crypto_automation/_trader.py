@@ -1,5 +1,7 @@
 # crypto_automation\core\trader.py
 from abc import abstractmethod
+
+from ._context import Context
 from ._type_hints import SignalTypes
 
 class Trader:
@@ -7,7 +9,7 @@ class Trader:
     from ._bot import CryptoBot
     from ._strategy import Strategy
     _bot: CryptoBot
-    context: object
+    context: Context
     strategy: Strategy
 
     def execute_signal(self, signal: SignalTypes) -> None:
